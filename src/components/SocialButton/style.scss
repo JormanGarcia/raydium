@@ -1,0 +1,16 @@
+.social-button {
+  opacity: 0.8;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #f5f5f550;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  svg {
+    color: white;
+    font-size: 14px;
+  }
+}

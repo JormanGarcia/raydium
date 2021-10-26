@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif !important;
+}
+
+img {
+  object-fit: contain;
+}
+
+body {
+  background-color: #0a0c36 !important;
+}
+
+.cont {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+main.cont {
+  min-height: calc(100vh - 70px);
+}
+
+// Styles
+
+.input-filled {
+  background: #0a0c36;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+
+.card-icon-title {
+  color: white;
+  opacity: 0.7;
+  font-size: 14px;
+  max-width: 100px;
+}
+
+// Customization
+
+// Button
+
+$btn-padding-y: 10px;
+$btn-padding-x: 30px;
+
+$btn-font-weight: 400;
+$btn-font-size: 15px;
+
+$btn-border-radius: 6px;
+
+// Button -- Variants
+
+.btn-gradient {
+  background: linear-gradient(100deg, #0094ff -10%, #fd4990 51%, #0094ff 110%);
+  color: white !important;
+  background-size: 200% auto;
+  transition: 0.2s ease-in-out !important;
+
+  &:hover {
+    background-position: right center;
+  }
+}
+
+.btn-outline-gradient {
+  color: white !important;
+  position: relative;
+  padding: 10px 0 !important;
+  background-color: red;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 6px;
+    padding: 2px;
+    background: linear-gradient(100deg, #0094ff -10%, #fd4990 110%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+}
+
+.btn-ghost {
+  background-color: #2f3262 !important;
+  width: 69px;
+  height: 69px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 !important;
+  svg {
+    color: white;
+    font-size: 30px;
+  }
+}
+
+// Modal
+
+$modal-content-bg: #1a1c43;
+$modal-content-border-color: transparent;
+$modal-footer-border-color: transparent;
+$modal-header-border-color: transparent;
+$modal-header-padding-x: 10px;
+$modal-header-padding-y: 5px;
+
+// Modal -- Styles
+
+.modal-title {
+  color: white;
+  font-size: 21px;
+  margin-bottom: 10px !important;
+  font-weight: 400 !important;
+}
+
+.modal-btn-close {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(237, 73, 144, 0.1);
+  color: #fd4990;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@import "~bootstrap/scss/bootstrap";

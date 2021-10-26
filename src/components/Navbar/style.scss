@@ -1,0 +1,36 @@
+.header {
+  background-color: #141643;
+  margin-bottom: 70px;
+}
+
+.navbar--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .logo-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+}
+
+.Menu {
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.offcanvas {
+  color: white;
+
+  .btn-close {
+    display: none;
+  }
+}

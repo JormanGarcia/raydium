@@ -1,0 +1,38 @@
+.nav-link--container {
+  padding: 30px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  overflow: hidden;
+  position: relative;
+  font-size: 15px;
+
+  &:hover {
+    background: rgba(154, 74, 137, 0.1);
+    color: #bb407b;
+  }
+
+  &.active {
+    background: rgba(154, 74, 137, 0.1);
+    color: #bb407b;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 3px;
+    background: linear-gradient(100deg, #0094ff -10%, #fd4990 110%);
+    border-radius: 3px 3px 0 0;
+    width: 80%;
+    transition: 0.2s;
+    transform: translateY(3px);
+  }
+
+  &.active::after {
+    transform: translateY(0px);
+  }
+}

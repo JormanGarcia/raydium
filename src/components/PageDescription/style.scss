@@ -1,0 +1,22 @@
+.page-description {
+  color: white;
+  padding: 35px 20px;
+
+  p,
+  h4 {
+    text-align: center;
+  }
+
+  h4 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  p {
+    margin: auto;
+    opacity: 0.5;
+    max-width: 700px;
+    line-height: 36px;
+  }
+}

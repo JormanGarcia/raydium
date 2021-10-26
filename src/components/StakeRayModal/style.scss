@@ -1,0 +1,78 @@
+.stake-ray--content {
+  background: #0a0c36;
+  border-radius: 5px;
+  padding-bottom: 10px;
+
+  .balance {
+    border-bottom: 1px solid #1a1c43;
+    color: white;
+    text-align: end;
+    padding: 10px 15px;
+    opacity: 0.7;
+    margin-bottom: 60px;
+  }
+
+  .bottom {
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .tabs {
+      color: rgba(365, 365, 365, 0.5);
+      font-size: 14px;
+      display: flex;
+
+      .tab {
+        width: 60px;
+        position: relative;
+        margin: auto 4px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: 500;
+      }
+
+      .tab.active {
+        background: linear-gradient(100deg, #0094ff -10%, #fd4990 110%);
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .tab::after,
+      .tab::before {
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(100deg, #0094ff -10%, #fd4990 110%);
+        content: "";
+        right: 0;
+        left: 0;
+        margin: auto;
+        visibility: hidden;
+      }
+
+      .tab.active::after,
+      .tab.active::before {
+        visibility: visible;
+      }
+
+      .tab::after {
+        top: -5px;
+        border-radius: 2px 2px 0 0;
+      }
+
+      .tab::before {
+        border-radius: 0 0 2px 2px;
+        bottom: -5px;
+      }
+    }
+
+    .stake-ray--input {
+      background: transparent !important;
+      border: none !important;
+      outline: none !important;
+      color: rgba(365, 365, 365, 0.7);
+      font-size: 21px;
+    }
+  }
+}
